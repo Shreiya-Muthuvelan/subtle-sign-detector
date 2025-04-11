@@ -6,17 +6,23 @@ A machine learning-powered Streamlit web app that detects early signs of **emplo
 
 ## 🚀 Demo
 
-🔗 Try the app here: [https://subtle-sign-detector-ka9g5apjnjvkmvufuy8jow.streamlit.app/]
+🔗 Try the app here: [https://subtle-sign-detector-ka9g5apjnjvkmvufuy8jow.streamlit.app/](https://subtle-sign-detector-ka9g5apjnjvkmvufuy8jow.streamlit.app/)
 
 ---
 
 ## 📌 Features
 
-- 🔥 **Predicts Burn Rate** using a Random Forest Regressor
-- 🧯 **Classifies Burnout Risk** (Low / Moderate / High)
-- 🌿 **Mental Wellness Suggestions** tailored to the risk level
-- 🖥️ User-friendly interface built using **Streamlit**
-- 🎨 Aesthetic, dark-mode themed UI aligned with mental health tone
+- 🔥 **Predicts Burn Rate** using a Random Forest Regressor  
+- 🧯 **Classifies Burnout Risk** (Low / Moderate / High)  
+- 🌿 **Mental Wellness Suggestions** tailored to the risk level  
+- 🖥️ User-friendly interface built using **Streamlit**  
+- 🎨 Aesthetic, dark-mode themed UI aligned with mental health tone  
+
+---
+
+## 💡 Inspiration
+
+With increasing mental fatigue and burnout in today’s high-pressure work culture, this project was built to empower both employees and employers with a simple, intuitive tool that brings awareness to burnout symptoms and encourages early self-care interventions.
 
 ---
 
@@ -53,3 +59,24 @@ A machine learning-powered Streamlit web app that detects early signs of **emplo
 - 💡 Personalized **wellness suggestions** based on burnout level
 
 ---
+
+## 🛠️ Technologies Used
+
+- **Python**
+- **Streamlit**
+- **scikit-learn**
+- **Pandas / NumPy / Seaborn / Matplotlib**
+- **Google Colab** for model training
+- **Joblib** for model serialization
+
+---
+
+## 👩‍💻 Author
+
+**Shreiya**  
+2nd Year CSE Student | ML & Generative AI Enthusiast  
+📍 BITS Pilani Dubai Campus  
+🔗 [LinkedIn](https://www.linkedin.com/in/shreiyamuthuvelan)
+
+---
+
