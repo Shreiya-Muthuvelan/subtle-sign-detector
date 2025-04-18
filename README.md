@@ -74,7 +74,7 @@ With increasing mental fatigue and burnout in today’s high-pressure work cultu
 ## 👩‍💻 Author
 
 **Shreiya**  
-2nd Year CSE Student | ML & Generative AI Enthusiast  
+2nd Year CSE Student | ML Enthusiast  
 📍 BITS Pilani Dubai Campus  
 🔗 [LinkedIn](https://www.linkedin.com/in/shreiyamuthuvelan)
 
