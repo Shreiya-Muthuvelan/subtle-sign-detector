@@ -13,21 +13,18 @@ def categorize_risk(burn_rate):
     else:
         return "High"
 
-# App Title
-#st.set_page_config(page_title="Subtle Sign Detector", page_icon="🧠")
+
 st.title("🧠 Subtle Sign Detector")
 st.subheader("Detect burnout levels and receive mental wellness suggestions")
 
 st.markdown("---")
 
-# Input Fields
+
 st.markdown("#### 📥 Input Details")
 mental_fatigue = st.slider("🧠 Mental Fatigue Score", 0.0, 10.0, 5.0)
 resource_alloc = st.slider("⚙️ Resource Allocation (1-10)", 1, 10, 5)
 designation=st.slider("🖥️ Designation(0-5)",0,5,2)
 is_available = st.checkbox("🏠 Is WFH Setup Available?")
-
-# Convert boolean to integer
 is_available_encoded = int(is_available)  # True → 1, False → 0
 
 st.markdown("---")
@@ -35,16 +32,13 @@ st.markdown("---")
 # Predict Button
 if st.button("🔍 Predict Burnout"):
     input_data = np.array([[mental_fatigue,resource_alloc,  designation,is_available_encoded]])
-
-    # Model Predictions
     burn_rate = regressor.predict(input_data)[0]
-    # Map numeric label to string
+    
     risk_label_numeric = categorize_risk(burn_rate)
     st.markdown(f"### 🔥 Predicted Burn Rate: `{burn_rate:.2f}`")
     st.markdown(f"### 😫 Burnout Risk Level: `{risk_label_numeric}`")
     st.markdown("---")
 
-    # 🧘 Suggestions Based on Risk Level
     st.markdown("### 💡 Mental Wellness Suggestions:")
 
     if risk_label_numeric == "Low":
