@@ -1,7 +1,7 @@
 
 # 🧠 Subtle Sign Detector
 
-A machine learning-powered Streamlit web app that detects early signs of **employee burnout** based on subtle workplace behavior. It uses a **regression-classification pipeline** to predict the **burn rate** and categorize the **burnout risk level** as Low, Moderate, or High — along with wellness suggestions based on the prediction.
+A machine learning-powered Streamlit web app that detects early signs of **employee burnout** based on subtle workplace behavior. It uses **Random Forest Regressor** to predict the **burn rate** and categorize the **burnout risk level** as Low, Moderate, or High — along with wellness suggestions based on the prediction.
 
 ---
 
@@ -35,7 +35,6 @@ With increasing mental fatigue and burnout in today’s high-pressure work cultu
 
 2. **Modeling**  
    - Regression Model: Random Forest Regressor to predict burn rate  
-   - Classification Model: Random Forest Classifier to predict burnout level based on burn rate  
 
 3. **Deployment**  
    - Streamlit for frontend  
@@ -49,7 +48,8 @@ With increasing mental fatigue and burnout in today’s high-pressure work cultu
 |-----------------------|----------------------------------------|
 | Mental Fatigue Score  | Level of mental exhaustion (0 to 10)   |
 | Resource Allocation   | Resource load at work (1 to 10)        |
-| Days Since Joining    | How long the employee has been working |
+| Designation           | Designation of the employee            |
+| WFH Setup Available   | Work from home is available or not(0/1)|
 
 ---
 
