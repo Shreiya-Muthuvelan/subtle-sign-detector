@@ -7,7 +7,7 @@ A machine learning-powered Streamlit web app that detects early signs of **emplo
 
 ## 🚀 Demo
 
-🔗 Try the app here:(https://burnout-prediction-model-mstzaperpqbbnuc7h2axzk.streamlit.app/)
+🔗 Try the app here:(https://subtle-sign-detector-ka9g5apjnjvkmvufuy8jow.streamlit.app/)
 
 ---
 
