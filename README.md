@@ -13,11 +13,11 @@ A machine learning-powered Streamlit web app that detects early signs of **emplo
 
 ## 📌 Features
 
-- 🔥 **Predicts Burn Rate** using a Random Forest Regressor  
-- 🧯 **Classifies Burnout Risk** (Low / Moderate / High)  
-- 🌿 **Mental Wellness Suggestions** tailored to the risk level  
-- 🖥️ User-friendly interface built using **Streamlit**  
-- 🎨 Aesthetic, dark-mode themed UI aligned with mental health tone  
+- **Predicts Burn Rate** using a Random Forest Regressor  
+- **Classifies Burnout Risk** (Low / Moderate / High)  
+- **Mental Wellness Suggestions** tailored to the risk level  
+- User-friendly interface built using **Streamlit**  
+- Aesthetic, dark-mode themed UI aligned with mental health tone  
 
 ---
 
