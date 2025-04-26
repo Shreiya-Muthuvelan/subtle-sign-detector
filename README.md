@@ -67,8 +67,8 @@ With increasing mental fatigue and burnout in today’s high-pressure work cultu
 - **Streamlit**
 - **scikit-learn**
 - **Pandas / NumPy / Seaborn / Matplotlib**
-- **Google Colab** for model training
-- **Joblib** for model serialization
+- **Google Colab** 
+- **Joblib**
 
 ---
 
