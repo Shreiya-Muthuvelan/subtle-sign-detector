@@ -1,83 +1,82 @@
+# 🧠 Subtle Sign Detector — Machine Learning Web App for Burnout Risk Analysis
 
-# 🧠 Subtle Sign Detector
+A **machine learning-powered Streamlit application** that detects early signs of **employee burnout** from subtle workplace behavior. 
 
-A machine learning-powered Streamlit web app that detects early signs of **employee burnout** based on subtle workplace behavior. It uses **Random Forest Regressor** to predict the **burn rate** and categorize the **burnout risk level** as Low, Moderate, or High — along with wellness suggestions based on the prediction.
-
----
-
-## 🚀 Demo
-
-🔗 Try the app here:(https://subtle-sign-detector-ka9g5apjnjvkmvufuy8jow.streamlit.app/)
+The system predicts the **burn rate** using a Random Forest Regressor and categorizes burnout risk as **Low, Moderate, or High**, offering tailored wellness suggestions for proactive self-care.
 
 ---
 
-## 📌 Features
-
-- **Predicts Burn Rate** using a Random Forest Regressor  
-- **Classifies Burnout Risk** (Low / Moderate / High)  
-- **Mental Wellness Suggestions** tailored to the risk level  
-- User-friendly interface built using **Streamlit**  
-- Aesthetic, dark-mode themed UI aligned with mental health tone  
+## 🚀 Live Demo
+[![Streamlit App](https://img.shields.io/badge/Try%20the%20App-Streamlit-blue?logo=streamlit)](https://subtle-sign-detector-ka9g5apjnjvkmvufuy8jow.streamlit.app/)
 
 ---
 
-## 💡 Inspiration
-
-With increasing mental fatigue and burnout in today’s high-pressure work culture, this project was built to empower both employees and employers with a simple, intuitive tool that brings awareness to burnout symptoms and encourages early self-care interventions.
+## 📌 Key Features
+- 🔍 **Burn Rate Prediction** using a trained Random Forest Regressor  
+- 🛡 **Risk Classification**: Low / Moderate / High  
+- 💡 **Personalized Wellness Suggestions** based on predicted risk  
+- 🎨 **Dark Mode UI** designed for a calming, mental-health-friendly experience  
+- 🌐 **Deployed on Streamlit Community Cloud** — accessible anywhere
 
 ---
 
-## 🧠 ML Workflow
+## 🧠 Problem & Solution
+Burnout is a growing challenge in modern workplaces, often going unnoticed until it impacts productivity and well-being.  
 
-1. **Data Cleaning & Preprocessing**  
-   - Handled missing values  
-   - Selected key features based on correlation and interpretability
+This project provides an **accessible, data-driven tool** to assess burnout risk early, enabling both individuals and HR teams to take timely preventive measures.
 
-2. **Modeling**  
-   - Regression Model: Random Forest Regressor to predict burn rate  
+---
+
+## ⚙️ ML Workflow
+1. **Data Preprocessing**  
+   - Imputed missing values using mean/median strategies  
+   - Selected features via correlation analysis and interpretability considerations  
+
+2. **Model Development**  
+   - Algorithm: Random Forest Regressor for continuous burn rate prediction  
+   - Evaluation: R² score and Mean Absolute Error (MAE) for performance assessment  
 
 3. **Deployment**  
-   - Streamlit for frontend  
-   - Hosted on Streamlit Community Cloud  
+   - Frontend: Streamlit for rapid UI development  
+   - Hosting: Streamlit Community Cloud with model serialized via Joblib
 
 ---
 
 ## 📥 Input Parameters
 
-| Feature               | Description                            |
-|-----------------------|----------------------------------------|
-| Mental Fatigue Score  | Level of mental exhaustion (0 to 10)   |
-| Resource Allocation   | Resource load at work (1 to 10)        |
-| Designation           | Designation of the employee            |
-| WFH Setup Available   | Work from home is available or not(0/1)|
+| Feature               | Description                               |
+|-----------------------|-------------------------------------------|
+| Mental Fatigue Score  | Level of mental exhaustion (0–10)         |
+| Resource Allocation   | Resource load at work (1–10)              |
+| Designation           | Employee's role or seniority level        |
+| WFH Setup Available   | 1 if WFH is available, 0 otherwise        |
 
 ---
 
 ## 📤 Output
 
-- `Predicted Burn Rate`: A float between 0.0 and 1.0  
-- `Burnout Risk Level`: Categorized as **Low**, **Moderate**, or **High**  
-- 💡 Personalized **wellness suggestions** based on burnout level
+| Output Metric         | Description                                |
+|-----------------------|--------------------------------------------|
+| Predicted Burn Rate   | Value between 0.0 and 1.0                  |
+| Burnout Risk Level    | Low, Moderate, or High category            |
+| Wellness Suggestions  | Custom advice based on burnout level       |
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
 
-- **Python**
-- **Streamlit**
-- **scikit-learn**
-- **Pandas / NumPy / Seaborn / Matplotlib**
-- **Google Colab** 
-- **Joblib**
+**Languages & Libraries**  
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)  
+scikit-learn • Pandas • NumPy • Matplotlib • Seaborn  
+
+**Deployment**  
+Streamlit • Joblib • Google Colab
 
 ---
 
 ## 👩‍💻 Author
-
-**Shreiya**  
-2nd Year CSE Student | ML Enthusiast  
-📍 BITS Pilani Dubai Campus  
-🔗 [LinkedIn](https://www.linkedin.com/in/shreiyamuthuvelan)
+**Shreiya Muthuvelan**  
+2nd Year CSE @ BITS Pilani Dubai | Machine Learning Developer  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/shreiyamuthuvelan/)  
 
 ---
-
