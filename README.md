@@ -76,7 +76,7 @@ Streamlit • Joblib • Google Colab
 
 ## 👩‍💻 Author
 **Shreiya Muthuvelan**  
-2nd Year CSE @ BITS Pilani Dubai | Machine Learning Developer  
+2nd Year CSE @ BITS Pilani Dubai 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/shreiyamuthuvelan/)  
 
 ---
