@@ -1,69 +1,85 @@
 # Subtle Sign Detector 🧠💻
 
-Web App for Employee Burnout Risk Analysis Using Machine Learning
+Web application for early detection of employee burnout risk using machine learning.
 
 ## Table of Contents
-- [Project Description](#project-description)
-- [Features](#features)
-- [Problem and Solution](#problem-and-solution)
-- [Input Parameters](#input-parameters)
-- [Output](#output)
-- [App Preview](#app-preview)
-- [Technologies & Tools](#technologies--tools)
+- [Overview](#overview)
+- [Data Source](#data-source)
+- [Objectives](#objective)
+- [Methodology](#methodology)
+- [Application Preview](#application-preview)
+- [Technologies & Tools](#technologies)
+- [Project Structure](#project-structure)
 - [Installation & Usage](#installation--usage)
 
-## Project Description
-Employee burnout is a critical challenge impacting productivity and wellbeing. The Subtle Sign Detector is a machine learning-powered web application that predicts early signs of burnout from subtle workplace behavior indicators.
+## Overview
+Employee burnout is a gradual process that can significantly impact productivity, engagement, and mental health if not identified early.
+The Subtle Sign Detector is a machine learning-powered web application that estimates burnout risk from subtle workplace indicators and provides supportive, non-clinical recommendations.
 
-The system predicts a burn rate and classifies burnout risk into Low, Moderate, or High, offering personalized wellness suggestions to promote proactive self-care.
+## Data Source
+This project is built using the Employee Burnout Dataset containing anonymized employee-level features related to workload, fatigue, and work environment.
+The dataset is publicly available on Kaggle : [Employee Burnout Dataset](https://www.kaggle.com/datasets/keshabkkumar/employee-burnout-dataset)
 
-## Features
-- Predicts burn rate using a Random Forest Regressor
-- Classifies burnout risk into Low, Moderate, High
-- Provides personalized wellness recommendations
-- Dark mode UI optimized for mental health usability
-- Streamlit deployment for accessible web usage
+## Objective
+* Estimate a continuous burn rate score for an individual based on key workplace and mental fatigue indicators.
+* Classify burnout risk into interpretable categories: Low, Moderate, and High.
+* Provide simple wellness-oriented suggestions to encourage proactive self-care and early awareness.
 
-## Problem and Solution
-Burnout develops gradually and is difficult to detect early, often affecting employee performance and health.
+## Methodology
+* **Target and features**
+  * Target variable: burn rate (continuous value between 0 and 1).
+  * Input features include mental fatigue, resource allocation, designation, and work-from-home setup availability.
 
-This application provides a data-driven, accessible tool that:
-- Helps individuals monitor burnout risk
-- Enables HR teams to intervene preventively
-- Supports overall workforce health and productivity
+* **Modeling**
+  * Trained a Random Forest Regressor to predict burn rate from the selected features.
+  * Applied standard preprocessing (handling missing values, encoding categorical features, and scaling where appropriate).
 
-## Input Parameters
+* **Risk categorization and recommendations**
+  * Mapped the predicted burn rate into discrete risk levels (Low, Moderate, High) using threshold-based rules.
+  * Defined a small set of wellness suggestions tailored to each risk level for interpretability and practical use.
 
-| Feature               | Description                                 |
-|-----------------------|---------------------------------------------|
-| Mental Fatigue Score  | Level of mental exhaustion (0–10)           |
-| Resource Allocation   | Workload/resource load (1–10)               |
-| Designation           | Employee’s role or seniority level          |
-| WFH Setup Available   | 1 if work-from-home setup is available, 0 otherwise |
+## Application Preview
 
-## Output
-
-| Output Metric         | Description                                  |
-|-----------------------|----------------------------------------------|
-| Predicted Burn Rate   | Continuous value between 0.0 and 1.0         |
-| Burnout Risk Level    | Categorized as Low, Moderate, or High        |
-| Wellness Suggestions  | Tailored advice based on risk level          |
-
-## App Preview
-
-**Input Form**  
+**Input Form** 
+Illustrates the Streamlit interface where users specify mental fatigue, workload, designation, and WFH setup to obtain a burnout estimate.
 <img src="app_inputs.jpg" width="600" alt="App Input Form">
 
 **Output Dashboard**  
+Displays the predicted burn rate, risk category, and corresponding wellness suggestions in a concise layout.
 <img src="app_ouputs.jpg" width="600" alt="App Output Dashboard">
 
-## Technologies & Tools
-- **Languages & Libraries:** Python 3.10, scikit-learn, Pandas, NumPy, Matplotlib, Seaborn
-- **Deployment & Hosting:** Streamlit, Joblib, Google Colab
+## Technologies
+* **Language and libraries:** Python 3.10, scikit-learn, pandas, NumPy, Matplotlib, Seaborn
+* **Model deployment:** Joblib, Streamlit
+* **Development environment:** Google Colab
 
+## Project Structure
+```
+subtle-sign-detectory
+├── SubtleSignDetector_new.ipynb
+├── app.py
+├── app_inputs.jpg
+├── app_ouputs.jpg
+├── burnout_regressor.pkl
+├── requirements.txt
+├── risk_label_encoder .pkl
+```
 
 ## Installation & Usage
 
 A live demo of the app is available here:  
 [Try the App on Streamlit](https://subtle-sign-detector-ka9g5apjnjvkmvufuy8jow.streamlit.app/)
 
+To run the app locally :
+
+1. Clone the repo
+   ```bash
+   git clone https://github.com/Shreiya-Muthuvelan/subtle-sign-detector 
+   cd subtle-sign-detector
+2. Install required libraries
+   ```bash
+   pip install -r requirements.txt
+3. Run Streamlit app
+   ```bash
+   python app.py
+   
